@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the necessary files and instructions to build and run the rizin-ghidra-docker tool using Docker.
+This repository contains the necessary files and instructions to build and run the rizin and rz-ghidra tool using Docker.
 
 ## Prerequisites
 
