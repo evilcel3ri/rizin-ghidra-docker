@@ -23,7 +23,7 @@ To launch the Docker container with the rizin-ghidra-docker tool, use the follow
 docker run -it rizin-ghidra-docker --rm -v /path/to/your/workdir:/home/nonroot/workdir 
 
 # Or you can use in in your current directory
-docker run -it rizin-ghidra-docker --rm -v $(pwd):/home/nonroot/workdir
+docker run -it --rm -v $(pwd):/home/nonroot/workdir rizin-ghidra-docker 
 ```
 ## Rizin quick usage
 
