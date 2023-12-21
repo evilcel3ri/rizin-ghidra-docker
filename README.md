@@ -1,4 +1,4 @@
-# Repository Name
+# Rizin + Ghidra in a docker
 
 ## Description
 
