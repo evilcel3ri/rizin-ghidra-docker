@@ -20,7 +20,7 @@ To build the Docker image, follow these steps:
 
 To launch the Docker container with the rizin-ghidra-docker tool, use the following command:
 ```sh
-docker run -it rizin-ghidra-docker --rm -v /path/to/your/workdir:/home/nonroot/workdir 
+docker run -it --rm -v /path/to/your/workdir:/home/nonroot/workdir rizin-ghidra-docker
 
 # Or you can use in in your current directory
 docker run -it --rm -v $(pwd):/home/nonroot/workdir rizin-ghidra-docker 
