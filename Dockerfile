@@ -37,6 +37,16 @@ RUN git clone https://github.com/rizinorg/rz-ghidra.git && \
     make && \
     make install 
 
+RUN git clone https://github.com/rizinorg/rz-libyara.git && \ 
+    cd rz-libyara && \
+    meson build && \
+    ninja -C build && \
+    ninja -C build install
 
+RUN git clone https://github.com/rizinorg/jsdec.git && \
+    cd jsdec && \
+    cd p && \
+    meson -Djsc_folder=".." --prefix=/usr build && \
+    ninja -C build install
 
 RUN ["/bin/bash"]
