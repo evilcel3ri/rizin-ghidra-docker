@@ -45,8 +45,7 @@ RUN git clone https://github.com/rizinorg/rz-libyara.git && \
 
 RUN git clone https://github.com/rizinorg/jsdec.git && \
     cd jsdec && \
-    cd p && \
-    meson -Djsc_folder=".." --prefix=/usr build && \
+    meson setup build --prefix=~/.local && \
     ninja -C build install
 
 RUN ["/bin/bash"]
